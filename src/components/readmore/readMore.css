@@ -1,0 +1,16 @@
+.text {
+    width: 100%;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 1em;
+    }
+.read-or-hide {
+    color: rgb(192,192,192);
+    cursor: pointer;
+    float: right;
+    margin: 1em;
+    }
+span {
+    border: solid;
+    border-color: black;
+}
