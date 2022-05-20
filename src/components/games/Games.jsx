@@ -2,12 +2,12 @@ import "./games.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReadMore from "../readmore/ReadMore";
-import Content from "../readmore/ReadMore";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 export default function Games() {
     const [game,setGame] = useState("");
     const [posts,setPosts] = useState(null);
-
+    const [name,setName] = useState("")
     useEffect( () => {
         getAllData() ;
 
@@ -19,7 +19,8 @@ export default function Games() {
             const p = res.data;
             setPosts( p );
         });
-    }
+    } 
+
     return (
         <div className="games">
             <datalist id="games">
@@ -29,11 +30,7 @@ export default function Games() {
                     )
                 })}
             </datalist>
-            <nav>
-                <a href="/games">Games</a>
-                <a href="">Accueil</a>
-            </nav>
-            <grid>
+            <section className="tableGames">
                 {posts && posts.filter(post => {
                     if (game ===""){
                         return post;
@@ -42,14 +39,18 @@ export default function Games() {
                     }
                 }).map( g => {
                     return(
-                        <article className="article" key={g.id}>
-                            <h3>{g.name}</h3>
-                            <img src={g.image} alt={g.name}></img>
-                            <ReadMore>{g.description}</ReadMore>
+                        <article className="articleGames" key={g.id}>
+                                <a href={g.name}>
+                                    <h3>{g.name}</h3>
+                                </a>
+                                <img className="imgGames" src={g.image} alt={g.name}></img>
+                                <ReadMore>{g.description}</ReadMore>
                         </article>
+                        
                     )
                 })}
-            </grid>
+                
+            </section>
         </div>
     )
 }
