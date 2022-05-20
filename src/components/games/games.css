@@ -1,0 +1,37 @@
+.games {
+    height: 100em;
+    margin-top: 2%;
+}
+
+article {
+    height: auto;
+    background-color: rgb(196, 24, 30);
+    width: 100%;
+    position: relative;
+    margin: 10px;
+    border: solid;
+    border-color: black;
+}
+
+grid {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 1rem;
+}
+
+nav {
+    background-color: rgb(31, 163, 59);
+}
+
+img {
+    margin: 10px;
+    width: 20%;
+    height: 300px;
+    width: 300px;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 3em;
+    text-align: center;
+}
