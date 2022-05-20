@@ -3,7 +3,7 @@
     margin-top: 2%;
 }
 
-article {
+.games article {
     height: auto;
     background-color: rgb(196, 24, 30);
     width: 100%;
@@ -13,24 +13,24 @@ article {
     border-color: black;
 }
 
-grid {
+.games grid {
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-gap: 1rem;
 }
 
-nav {
+.games nav {
     background-color: rgb(31, 163, 59);
 }
 
-img {
+.games img {
     margin: 10px;
     width: 20%;
     height: 300px;
     width: 300px;
 }
 
-h3 {
+.games h3 {
     margin: 10px;
     font-size: 3em;
     text-align: center;

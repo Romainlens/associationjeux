@@ -29,10 +29,6 @@ export default function Games() {
                     )
                 })}
             </datalist>
-            <nav>
-                <a href="/games">Games</a>
-                <a href="">Accueil</a>
-            </nav>
             <grid>
                 {posts && posts.filter(post => {
                     if (game ===""){

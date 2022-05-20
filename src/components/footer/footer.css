@@ -1,0 +1,41 @@
+/************** FOOTER **************/
+
+footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: #e1e3b2;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.copyrights {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  font-weight: 300;
+}
+
+footer nav {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #434544;
+  font-weight: 700;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
