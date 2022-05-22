@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { BrowserRouter, Routes,Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
@@ -18,14 +18,18 @@ root.render(
 
     <Header />
 
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="jeux" element={<Games />} />
-      <Route path="infos" element={<About />} />
-      <Route path="histoire" element={<History />} />
-      <Route path="membres" element={<Users />} />
-      <Route path="contact" element={<Contact />} />
-    </Routes>
+    <main>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="jeux" element={<Games />} />
+        <Route path="infos" element={<About />} />
+        <Route path="histoire" element={<History />} />
+        <Route path="membres" element={<Users />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+
+    </main>
 
     <Footer />
 

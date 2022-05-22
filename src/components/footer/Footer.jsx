@@ -1,6 +1,6 @@
 import "./footer.css";
 
-export default function Header() {
+export default function Footer() {
     return (
         <>
           <footer>
