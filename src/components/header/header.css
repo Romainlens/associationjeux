@@ -64,6 +64,8 @@ header span {
     transition: 250ms linear all;
     flex-direction: column;
     z-index: 1;
+    background-color: #e1e3b2;
+    filter: drop-shadow(0 0 3rem #434544);
   }
 
   .hiddenMenu {

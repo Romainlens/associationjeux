@@ -11,6 +11,7 @@ footer img {
   width: 100px;
   height: auto;
   object-fit: contain;
+  margin-left: 10px;
 }
 
 footer .copyrights {
