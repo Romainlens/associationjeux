@@ -1,14 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/home/Home';
+import About from './components/about/About';
+import History from './components/history/History';
+import Users from './components/users/Users';
+import Contact from './components/contact/Contact';
+import Games from './components/games/Games';
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="jeux" element={<Games />} />
+      <Route path="infos" element={<About />} />
+      <Route path="histoire" element={<History />} />
+      <Route path="membres" element={<Users />} />
+      <Route path="contact" element={<Contact />} />
+    </Routes>
   );
 }
-
-export default App;

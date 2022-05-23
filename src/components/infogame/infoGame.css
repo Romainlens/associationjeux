@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+.infoGame {
+    height: 100%;
+    margin-top: 2%;
+}
+
+.articleInfoGame {
+    background-color: rgb(196, 24, 30);
+    position: relative;
+    border: solid;
+    border-color: black;
+    height: auto;
+}
+
+.tableInfoGame {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-gap: 1rem;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.imgInfoGame {
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.infoGame h3 {
+    margin: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .tableInfoGame {
+        grid-template-columns: 45% 45%;
+    }
+    .imgInfoGame {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tableInfoGame {
+        grid-template-columns: 30% 30% 30%;
+    }
+    .imgInfoGame {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .tableInfoGame {
+        grid-template-columns: 24% 24% 24% 24%;
+    }
+    .imgInfoGame {
+        height: 250px;
+        width: 250px;
+    }
+}
