@@ -1,6 +1,5 @@
 import "./readMore.css";
 import { useState } from "react";
-import Games from "../games/Games";
 
     const ReadMore = ({ children }) => {
         const text = children;
@@ -9,11 +8,12 @@ import Games from "../games/Games";
         setIsReadMore(!isReadMore);
     };
     return (
-        <p className="text">
-            {isReadMore ? text.slice(0, 150) : text}
-            <span onClick={toggleReadMore} className="read-or-hide">{isReadMore ? "...read more" : "show less"}
-            </span>
-        </p>
+        <div className="text">
+            {isReadMore ? text.slice(0, 100) : text}
+                <span onClick={toggleReadMore} className="read-or-hide">{isReadMore ? "...read more" : "show less"}
+                </span>
+            
+        </div>
     );
 };
 

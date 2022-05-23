@@ -2,26 +2,20 @@
     margin: 0;
 }
 
-.games {
+.infoGame {
     height: 100%;
     margin-top: 2%;
 }
 
-
-.games article {
-    height: auto;
+.articleInfoGame {
     background-color: rgb(196, 24, 30);
-    width: 100%;
-
-.articleGames {
-    background-color: rgb(123, 245, 145);
     position: relative;
     border: solid;
-    border-color: rgb(109, 199, 7);
+    border-color: black;
     height: auto;
 }
 
-.tableGames {
+.tableInfoGame {
     display: grid;
     grid-template-columns: 90%;
     grid-gap: 1rem;
@@ -31,48 +25,48 @@
     height: auto;
 }
 
-
-.games nav {
+nav {
     background-color: rgb(31, 163, 59);
+    width: 100%;
 }
 
-.imgGames {
+.imgInfoGame {
     margin: 10px;
     height: 150px;
     width: 150px;
 }
 
-.games h3 {
+h3 {
     margin: 10px;
     font-size: 2em;
     text-align: center;
 }
 
-@media (min-width: 500px) {
-    .tableGames {
+@media (min-width: 800px) {
+    .tableInfoGame {
         grid-template-columns: 45% 45%;
     }
-    .imgGames {
+    .imgInfoGame {
         height: 200px;
         width: 200px;
     }
 }
 
-@media (min-width: 1000px) {
-    .tableGames {
+@media (min-width: 1200px) {
+    .tableInfoGame {
         grid-template-columns: 30% 30% 30%;
     }
-    .imgGames {
+    .imgInfoGame {
         height: 250px;
         width: 250px;
     }
 }
 
 @media (min-width: 1800px) {
-    .tableGames {
+    .tableInfoGame {
         grid-template-columns: 24% 24% 24% 24%;
     }
-    .imgGames {
+    .imgInfoGame {
         height: 250px;
         width: 250px;
     }
