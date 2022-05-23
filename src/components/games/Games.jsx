@@ -2,12 +2,9 @@ import "./games.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReadMore from "../readmore/ReadMore";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-
 export default function Games() {
     const [game,setGame] = useState("");
     const [posts,setPosts] = useState(null);
-    const [name,setName] = useState("")
     useEffect( () => {
         getAllData() ;
 
@@ -40,7 +37,7 @@ export default function Games() {
                 }).map( g => {
                     return(
                         <article className="articleGames" key={g.id}>
-                                <a href={g.name}>
+                                <a>
                                     <h3>{g.name}</h3>
                                 </a>
                                 <img className="imgGames" src={g.image} alt={g.name}></img>
