@@ -16,16 +16,15 @@
     border-color: rgb(109, 199, 7);
     height: auto;
 }
-
 .tableGames {
-    display: grid;
+    display:grid;
     grid-template-columns: 90%;
-    grid-gap: 1rem;
+    grid-gap:1rem;
     justify-content: center;
     margin-top: 10px;
     width: 100%;
     height: auto;
-}
+    }
 
 .imgGames {
     margin: 10px;

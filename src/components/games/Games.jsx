@@ -5,14 +5,13 @@ import ReadMore from "../readmore/ReadMore";
 export default function Games() {
     const [game,setGame] = useState("");
     const [posts,setPosts] = useState(null);
-    useEffect( () => {
+    useEffect(() => {
         getAllData() ;
 
 },[]) ;
-
-    const getAllData = () => {
+const getAllData = () => {
         axios.get("/bd/games.json")
-        .then(res => {
+        .then(res =>{
             const p = res.data;
             setPosts( p );
         });
@@ -43,12 +42,10 @@ export default function Games() {
                                     <h3>{g.name}</h3>
                                 </a>
                                 <img className="imgGames" src={g.image} alt={g.name}></img>
-                                <ReadMore>{g.description}</ReadMore>
-                        </article>
-                        
+                                
+                        </article>        
                     )
-                })}
-                
+                })}     
             </section>
         </div>
     )
