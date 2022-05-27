@@ -1,0 +1,15 @@
+.text {
+    text-align: start;
+    font-size: 1.2em;
+    margin-right: 1em;
+    margin: 10px;
+    width: 94%;
+    height: auto;
+    }
+
+.read-or-hide {
+    color: rgb(13, 5, 240);
+    cursor: pointer;
+    padding: 0.2em;
+    }
+

@@ -1,0 +1,70 @@
+.games {
+    height: 100%;
+    margin-top: 2%;
+}
+
+.games article {
+    height: auto;
+    background-color: rgb(196, 24, 30);
+    width: 100%;
+}
+
+.articleGames {
+    background-color: rgb(123, 245, 145);
+    position: relative;
+    border: solid;
+    border-color: rgb(109, 199, 7);
+    height: auto;
+}
+
+.tableGames {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-gap: 1rem;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.imgGames {
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.games h3 {
+    margin: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .tableGames {
+        grid-template-columns: 45% 45%;
+    }
+    .imgGames {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .tableGames {
+        grid-template-columns: 30% 30% 30%;
+    }
+    .imgGames {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .tableGames {
+        grid-template-columns: 24% 24% 24% 24%;
+    }
+    .imgGames {
+        height: 250px;
+        width: 250px;
+    }
+}
