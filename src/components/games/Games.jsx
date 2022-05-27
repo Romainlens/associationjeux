@@ -1,8 +1,10 @@
 import "./games.css";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import ReadMore from "../readmore/ReadMore";
+import { Link } from "react-router-dom";
+import GamesInfo from "../../bd/games.json"
+
 export default function Games() {
+<<<<<<< HEAD
     const [game,setGame] = useState("");
     const [posts,setPosts] = useState(null);
     useEffect(() => {
@@ -17,26 +19,14 @@ const getAllData = () => {
         });
     } 
 
+=======
+>>>>>>> 3cdcad8526d33b894289273a2d5a46a2db7e76b8
     return (
-        <div className="games">
-            <datalist id="games">
-                {posts && posts.map( p => {
-                    return (
-                        <option key={p.id} value={p.title}>{p.title}</option>
-                    )
-                })}
-            </datalist>
-
-            <section className="tableGames">
-
-                {posts && posts.filter(post => {
-                    if (game ===""){
-                        return post;
-                    } else if (post.name.toLowerCase().includes(game.toLowerCase())) {
-                        return post;
-                    }
-                }).map( g => {
+        <div className="games"> 
+            <section className="tableGames">{
+                GamesInfo.map( game => {
                     return(
+<<<<<<< HEAD
                         <article className="articleGames" key={g.id}>
                                 <a>
                                     <h3>{g.name}</h3>
@@ -46,7 +36,17 @@ const getAllData = () => {
                         </article>        
                     )
                 })}     
+=======
+                        <article className="articleGames" key={game.id}>
+                                <h3><Link to={game.name}>{game.name}</Link></h3>
+                            <img className="imgGames" src={game.image} alt={game.name}></img>
+                            <ReadMore>{game.description}</ReadMore>
+                        </article>
+                        )
+                    })}
+>>>>>>> 3cdcad8526d33b894289273a2d5a46a2db7e76b8
             </section>
         </div>
-    )
-}
+    );
+}   
+

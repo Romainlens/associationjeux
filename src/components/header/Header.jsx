@@ -20,7 +20,7 @@ export default function Header() {
               <Link to="/membres">Membres</Link>
               <Link to="/contact">Contact</Link>
             </nav>
-            <span class="material-symbols-outlined" onClick={handleToggle}>
+            <span className="material-symbols-outlined" onClick={handleToggle}>
               menu
             </span>
           </header>
