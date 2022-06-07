@@ -25,18 +25,13 @@
     height: auto;
 }
 
-nav {
-    background-color: rgb(31, 163, 59);
-    width: 100%;
-}
-
 .imgInfoGame {
     margin: 10px;
     height: 150px;
     width: 150px;
 }
 
-h3 {
+.infoGame h3 {
     margin: 10px;
     font-size: 2em;
     text-align: center;
