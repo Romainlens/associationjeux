@@ -3,7 +3,7 @@
     margin-top: 2%;
 }
 
-.games article {
+.games .articleGames {
     height: auto;
     background-color: #C9D269;
     width: 100%;
@@ -40,7 +40,7 @@
     transition: 2.5s;
 }
 
-.games h3{
+.games .h3Games{
     margin: 10px;
     font-size: 1.5em;
     text-align: center;

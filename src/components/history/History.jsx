@@ -5,14 +5,14 @@ export default function History() {
         <>
         <div className="landing">
           <div>
-            <h1>Notre histoire</h1>
+            <h1 className="h1history">Notre histoire</h1>
             
           </div>
         </div>
         <div className="firstSection">
           <div className="firstLeft">
             <div className="niktmor">
-              <h3>Notre enseigne !</h3>
+              <h3 className="h3history">Notre enseigne !</h3>
             
              <div className="flex">
              <img src="https://www.rom-game.fr/multimedia/news/191118_shop.jpg" alt=""  />
@@ -29,7 +29,7 @@ export default function History() {
             <div className="niktmor">
               <h2>Qui somme nous ?</h2>
             
-              <p>
+              <p className="phistory">
                   On est une équipe de 4 membres tous passioner de jeux, <br /> bsoit de découvert et d'echange c'est pour cette raison que nous avons pris la decision d'ouvert un espace de jeux 
                   Mais pas seulement des jeux mais egalement des divertisement acompagner de conseil et des divertisement a la hauteur des attentes 
                   plus de 15 000 jeux certain plus connue que dautre mais tous certifier des meilleurs jeux a faire entre ami ou famille pour toute age.
@@ -44,7 +44,7 @@ export default function History() {
             <img src="https://previews.123rf.com/images/jaaakworks/jaaakworks1509/jaaakworks150900026/44830860-cartoon-%C3%A9quipe-d-affaires-heureux.jpg" alt="" />
           </div>
           <div className="secondRight">
-            <h3>notre equipe</h3>
+            <h3 className="h3history">notre equipe</h3>
             
             <ul>
               <li>
@@ -62,8 +62,8 @@ export default function History() {
           <div className="thirdInner">
             <div className="thirdInnerFirst">
               <img  src="https://assets.asana.biz/m/2945c24cc5afd1fd/original/article-leadership-icebreaker-questions-team-building-2x.jpg" alt="" style={{width:"500px",height:"300px"}}/>
-              <h3>Une question ou recommandation ?</h3>
-              <p>Notre équipe s'engage a vous répondrez dans les plus bref délai du lundi au vendredi de 8h à 12h.</p>
+              <h3 className="h3history">Une question ou recommandation ?</h3>
+              <p className="phistory">Notre équipe s'engage a vous répondrez dans les plus bref délai du lundi au vendredi de 8h à 12h.</p>
               <button>contactez-nous par mail</button>
             </div>
             

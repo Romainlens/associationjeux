@@ -1,18 +1,23 @@
 .infoGame {
+    display:flex;
+    justify-content:center;
+    margin:auto;
     height: 100%;
-    margin-top: 2%;
+    width:100%;
+    margin-top: 2px;
 }
 
-.articleInfoGame {
+.articleInfoGames {
     background-color: #C9D269;
     position: relative;
     border: solid 0.5px;
-    border-color: white;
+    width:100%;
     height: auto;
 }
 
 .tableInfoGame {
-    
+    height: 100%;
+    width:100%;
 }
 //baniere
 .bgInfoGames{
@@ -33,16 +38,19 @@
     transform:rotate(-30deg);
     transition: 2.5s;
 }
- h3 {
+ .h3InfoGames {
     margin: 20px;
-    font-size: 2em;
+    font-size: 40px;
     text-align: center;
     color: #fff;
     
 }
+.h3InfoGames span{
+    font-size: 4Opx;
+}
 /* Description */
 .pDescription{
-margin:10px 100px;
+margin:10px 10px;
 text-align:center;
 font-size: 18px;
 font-weight:400;
@@ -65,9 +73,7 @@ font-weight:900;
 }
 
 @media (min-width: 800px) {
-    .tableInfoGame {
-        grid-template-columns: 45% 45%;
-    }
+    
     .imgInfoGame {
         height: 200px;
         width: 200px;
@@ -75,9 +81,7 @@ font-weight:900;
 }
 
 @media (min-width: 1200px) {
-    .tableInfoGame {
-        grid-template-columns: 30% 30% 30%;
-    }
+    
     .imgInfoGame {
         height: 250px;
         width: 250px;

@@ -1,17 +1,17 @@
-h3{
+.h3history{
     font-size: 40px;
     text-transform: uppercase;
     margin-left: 40px;
     margin:20px;
 }
-h1{
+.h1history{
     color:White;
     text-align: center;
     margin-top: -200px;
     Font-size: 50px;
     text-transform: uppercase;
 }
-p{
+.phistory{
     margin:10px;
     margin-left:0px;
 }

@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <>
       <div className="formulaire">
-        <h1>Formulaire de contact</h1>
+        <h1 className="h1contact">Formulaire de contact</h1>
         <form onSubmit={sendEmail}>
           <label>Nom</label>
           <input type="text" id="fname" name="name" placeholder="Name"></input>
