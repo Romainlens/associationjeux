@@ -1,45 +1,24 @@
-import "./infoGame.css"
-import { useState, useEffect } from "react";
-import axios from "axios";
-export default function InfoGame () {
+import "./infoGame.css";
+import { useParams } from "react-router-dom";
+import GamesInfo from "../../bd/games.json";
 
-    const [infoGame,setInfoGame] = useState("");
+export default function InfoGame() {
+    const { name } = useParams();
+    const result = GamesInfo.filter((game) => game.name === name);
+    console.log(result);
 
-    useEffect ( () => {
-        getAllData() ;
-    },[]) ;
-
-    const getAllData = () => {
-        axios.get("/bd/games.json")
-        .then(res => {
-            const i = res.data;
-            setInfoGame( i );
-        });
-    }
-
-
-    <div className="infoGame">
-        <datalist id="infoGame">
-            {infoGame && infoGame.map( i => {
-                return (
-                    <option key={i.id} value={i.title}>{i.title}</option>
-                )
-            })}
-        </datalist>
-        <section className="infoGame">
-            {infoGame && infoGame.filter(infoGame => {
-                if (infoGame === ""){
-                return infoGame;
-                }
-            }).map( i => {
-                return(
-                    <article className="articleInfoGame" key={i.id}>
-                        <h3> {i.name}</h3>
-                        <img className="imgInfoGame" src={i.image} alt={i.name}></img>
-                        <describe>{i.description}</describe>
-                    </article>
-                )
-            })}
+    return (
+    <div className="games">
+        <section className="tableGames">
+        {result.map((game) => {
+            return (
+            <article className="articleGames" key={game.id}>
+                <h3>{game.name}</h3>
+                <img className="imgGames" src={game.image} alt={game.name}></img>
+            </article>
+            );
+        })}
         </section>
     </div>
-};
+    );
+}

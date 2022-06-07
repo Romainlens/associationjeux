@@ -1,55 +1,26 @@
 import "./games.css";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import ReadMore from "../readmore/ReadMore";
+import { Link } from "react-router-dom";
+import GamesInfo from "../../bd/games.json"
+
 export default function Games() {
-    const [game,setGame] = useState("");
-    const [posts,setPosts] = useState(null);
-    useEffect( () => {
-        getAllData() ;
-
-},[]) ;
-
-    const getAllData = () => {
-        axios.get("/bd/games.json")
-        .then(res => {
-            const p = res.data;
-            setPosts( p );
-        });
-    } 
-
     return (
-        <div className="games">
-            <datalist id="games">
-                {posts && posts.map( p => {
-                    return (
-                        <option key={p.id} value={p.title}>{p.title}</option>
-                    )
-                })}
-            </datalist>
-
-            <section className="tableGames">
-
-                {posts && posts.filter(post => {
-                    if (game ===""){
-                        return post;
-                    } else if (post.name.toLowerCase().includes(game.toLowerCase())) {
-                        return post;
-                    }
-                }).map( g => {
+        <div className="games"> 
+            <section className="tableGames">{
+                GamesInfo.map( game => {
                     return(
-                        <article className="articleGames" key={g.id}>
-                                <a>
-                                    <h3>{g.name}</h3>
-                                </a>
-                                <img className="imgGames" src={g.image} alt={g.name}></img>
-                                <ReadMore>{g.description}</ReadMore>
+                        <article className="articleGames" key={game.id}>
+                                <h3><Link style={{color:'#434544',}} to={game.name} >{game.name}</Link></h3>
+                                <Link to={game.name}>
+                            <img className="imgGames" src={game.image} alt={game.name}></img></Link>
+                            <ReadMore>{game.description}</ReadMore>
+                           
                         </article>
-                        
-                    )
-                })}
-                
+                        )
+                    })}
             </section>
         </div>
-    )
-}
+    );
+}   
+
+ //peopleMin

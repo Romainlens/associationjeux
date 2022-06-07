@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <>
           <header>
-            <img src='./img/nom.png' alt="PROUT" />
+            <img src='../img/nom.png' alt="PROUT" />
             <nav className={isActive ? "hiddenMenu" : null}>
               <Link to="/">Accueil</Link>
               <Link to="/infos">Infos</Link>
@@ -20,7 +20,7 @@ export default function Header() {
               <Link to="/membres">Membres</Link>
               <Link to="/contact">Contact</Link>
             </nav>
-            <span class="material-symbols-outlined" onClick={handleToggle}>
+            <span className="material-symbols-outlined" onClick={handleToggle}>
               menu
             </span>
           </header>

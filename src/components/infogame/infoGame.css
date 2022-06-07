@@ -1,40 +1,67 @@
-* {
-    margin: 0;
-}
-
 .infoGame {
     height: 100%;
     margin-top: 2%;
 }
 
 .articleInfoGame {
-    background-color: rgb(196, 24, 30);
+    background-color: #C9D269;
     position: relative;
-    border: solid;
-    border-color: black;
+    border: solid 0.5px;
+    border-color: white;
     height: auto;
 }
 
 .tableInfoGame {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-gap: 1rem;
-    justify-content: center;
-    margin-top: 10px;
-    width: 100%;
-    height: auto;
+    
+}
+//baniere
+.bgInfoGames{
+    margin-top:50px;
+}
+/* IMG */
+.imgInfoGames {
+    display:flex;
+    justify-content:center;
+    margin: auto;
+   
+    margin-bottom: 50px;
 }
 
-.imgInfoGame {
-    margin: 10px;
-    height: 150px;
-    width: 150px;
-}
 
-.infoGame h3 {
-    margin: 10px;
+.imgInfoGames:hover{
+    cursor:pointer;
+    transform:rotate(-30deg);
+    transition: 2.5s;
+}
+ h3 {
+    margin: 20px;
     font-size: 2em;
     text-align: center;
+    color: #fff;
+    
+}
+/* Description */
+.pDescription{
+margin:10px 100px;
+text-align:center;
+font-size: 18px;
+font-weight:400;
+}
+
+/* niveau */
+.pDif{
+text-align:center;
+font-size: 20px;
+font-weight:900;
+
+}
+.hr{
+    background:#fff;
+    width:20%;
+    height:2px;
+    display:flex;
+    justify-content:center;
+    margin:15px auto;
 }
 
 @media (min-width: 800px) {

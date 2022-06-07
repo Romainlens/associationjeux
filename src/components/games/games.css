@@ -5,38 +5,47 @@
 
 .games article {
     height: auto;
-    background-color: rgb(196, 24, 30);
+    background-color: #C9D269;
     width: 100%;
 }
 
 .articleGames {
-    background-color: rgb(123, 245, 145);
+    background-color: #C9D269;
     position: relative;
     border: solid;
     border-color: rgb(109, 199, 7);
     height: auto;
 }
-
 .tableGames {
-    display: grid;
+    display:grid;
     grid-template-columns: 90%;
-    grid-gap: 1rem;
+    grid-gap:1rem;
     justify-content: center;
     margin-top: 10px;
     width: 100%;
     height: auto;
-}
+    }
 
 .imgGames {
+    display:flex;
+    justify-content:center;
     margin: 10px;
     height: 150px;
     width: 150px;
+    margin: auto;
+}
+.imgGames:hover{
+    cursor:pointer;
+    transform:rotate(-30deg);
+    transition: 2.5s;
 }
 
-.games h3 {
+.games h3{
     margin: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    textDecoration: none;
+    font-weight: 700;
 }
 
 @media (min-width: 500px) {
