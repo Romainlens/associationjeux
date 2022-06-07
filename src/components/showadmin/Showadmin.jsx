@@ -8,7 +8,7 @@ export default function Showadmin(){
         const { admin } = useParams();
         const result = showAdmin.filter(admin=> admin.id === true)
         console.log(result)
-    }
+    
 return(
                <div className="admin">
                    <section className="id">{
@@ -20,15 +20,8 @@ return(
                          )
                            }
                             )
-                        }
+                        }                     
                    </section>
                </div>
-
-
-
-
-
-
-
-
-
+);
+                    }
