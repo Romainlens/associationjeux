@@ -10,7 +10,7 @@ import { useState } from "react";
     return (
         <div className="text">
             {isReadMore ? text.slice(0, 100) : text}
-                <span onClick={toggleReadMore} className="read-or-hide">{isReadMore ? "...read more" : "show less"}
+                <span onClick={toggleReadMore} className="read-or-hide">{isReadMore ? "...read more >" : "< show less"}
                 </span>
             
         </div>

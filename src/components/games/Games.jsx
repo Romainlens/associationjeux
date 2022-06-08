@@ -14,7 +14,6 @@ export default function Games() {
                                 <Link to={game.name}>
                             <img className="imgGames" src={game.image} alt={game.name}></img></Link>
                             <ReadMore>{game.description}</ReadMore>
-                           
                         </article>
                         )
                     })}

@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <>
           <header>
-            <img src='./img/nom.png' alt="PROUT" />
+            <img src='../img/nom.png' alt="PROUT" />
             <nav className={isActive ? "hiddenMenu" : null}>
               <Link to="/">Accueil</Link>
               <Link to="/infos">Infos</Link>
