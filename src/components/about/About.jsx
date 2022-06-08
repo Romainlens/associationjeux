@@ -15,7 +15,7 @@ export default function About() {
                 <h2 className="aboutH2"> Nous contacter ?</h2>
                 <section className="aboutSection">
                     <p>Redirige toi vers cette page {ArrowR} <Link to="/contact">Contact</Link></p>
-                </section>
+                    </section>
             </article>
         </>
     )

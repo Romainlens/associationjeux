@@ -1,0 +1,27 @@
+.h3history{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin:20px;
+}
+.h1history{
+    color:White;
+    text-align: center;
+    margin-top: -200px;
+    Font-size: 50px;
+    text-transform: uppercase;
+}
+.phistory{
+    margin:10px;
+    margin-left:0px;
+}
+.flex{
+    display:inline-block;
+    
+}
+.flex img{
+    border-radius:50px;
+    height:100px;
+    width:100px;
+    margin:20px;
+}

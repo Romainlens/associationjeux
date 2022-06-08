@@ -1,4 +1,4 @@
-import "../../components/games/games.css";
+import "./infoGame.css";
 import { useParams } from "react-router-dom";
 import GamesInfo from "../../bd/games.json";
 
@@ -9,12 +9,15 @@ export default function InfoGame() {
 
     return (
     <div className="games">
-        <section className="tableGames">
+        <section className="tableInfoGames">
         {result.map((game) => {
             return (
-            <article className="articleGames" key={game.id}>
-                <h3>{game.name}</h3>
-                <img className="imgGames" src={game.image} alt={game.name}></img>
+            <article className="articleInfoGames" key={game.id}>
+                <h3 className="h3InfoGames"><span>{game.name}</span></h3>
+                <img className="imgInfoGames" src={game.image} alt={game.name}></img>
+                <h3 className="h3InfoGames">yolo</h3>
+                <h3 className="h3InfoGames">Description :</h3>
+                <p className="pDescription">{game.description}</p>
             </article>
             );
         })}

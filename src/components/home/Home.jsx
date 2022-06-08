@@ -7,7 +7,6 @@ export default function Home() {
     <div className="landing">
       <div>
         <p>C'est nous qu'on fait les meilleurs trucs à manger dans tout l'espace de l'univers. Et ouais.</p>
-        <button>JE COMMANDE DIRECT</button>
       </div>
     </div>
 

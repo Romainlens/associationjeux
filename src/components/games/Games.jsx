@@ -10,9 +10,11 @@ export default function Games() {
                 GamesInfo.map( game => {
                     return(
                         <article className="articleGames" key={game.id}>
-                                <h3><Link to={game.name}>{game.name}</Link></h3>
-                            <img className="imgGames" src={game.image} alt={game.name}></img>
+                                <h3 className="h3Games"><Link style={{color:'#434544',}} to={game.name} >{game.name}</Link></h3>
+                                <Link to={game.name}>
+                            <img className="imgGames" src={game.image} alt={game.name}></img></Link>
                             <ReadMore>{game.description}</ReadMore>
+                           
                         </article>
                         )
                     })}
@@ -20,4 +22,3 @@ export default function Games() {
         </div>
     );
 }   
-

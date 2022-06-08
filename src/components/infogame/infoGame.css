@@ -1,46 +1,79 @@
-* {
-    margin: 0;
-}
-
 .infoGame {
+    display:flex;
+    justify-content:center;
+    margin:auto;
     height: 100%;
-    margin-top: 2%;
+    width:100%;
+    margin-top: 2px;
 }
 
-.articleInfoGame {
-    background-color: rgb(196, 24, 30);
+.articleInfoGames {
+    background-color: #C9D269;
     position: relative;
-    border: solid;
-    border-color: black;
+    border: solid 0.5px;
+    width:100%;
     height: auto;
 }
 
 .tableInfoGame {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-gap: 1rem;
-    justify-content: center;
-    margin-top: 10px;
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width:100%;
 }
 
-.imgInfoGame {
-    margin: 10px;
-    height: 150px;
-    width: 150px;
+.bgInfoGames{
+    margin-top:50px;
+}
+/* IMG */
+.imgInfoGames {
+    display:flex;
+    justify-content:center;
+    margin: auto;
+   
+    margin-bottom: 50px;
 }
 
-.infoGame h3 {
-    margin: 10px;
-    font-size: 2em;
+
+.imgInfoGames:hover{
+    cursor:pointer;
+    transform:rotate(-30deg);
+    transition: 2.5s;
+}
+ .h3InfoGames {
+    margin: 20px;
+    font-size: 40px;
     text-align: center;
+    color: #fff;
+    
+}
+.h3InfoGames span{
+    font-size: 4Opx;
+}
+/* Description */
+.pDescription{
+margin:10px 10px;
+text-align:center;
+font-size: 18px;
+font-weight:400;
+}
+
+/* niveau */
+.pDif{
+text-align:center;
+font-size: 20px;
+font-weight:900;
+
+}
+.hr{
+    background:#fff;
+    width:20%;
+    height:2px;
+    display:flex;
+    justify-content:center;
+    margin:15px auto;
 }
 
 @media (min-width: 800px) {
-    .tableInfoGame {
-        grid-template-columns: 45% 45%;
-    }
+    
     .imgInfoGame {
         height: 200px;
         width: 200px;
@@ -48,9 +81,7 @@
 }
 
 @media (min-width: 1200px) {
-    .tableInfoGame {
-        grid-template-columns: 30% 30% 30%;
-    }
+    
     .imgInfoGame {
         height: 250px;
         width: 250px;
